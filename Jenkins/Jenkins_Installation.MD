@@ -43,7 +43,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    yum -y install jenkins
    ```
 
-   ### Start Jenkins
+   ### Start Jenkins centos6
    ```sh
    # Start jenkins service
    service jenkins start
@@ -51,7 +51,14 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    # Setup Jenkins to start at boot,
    chkconfig jenkins on
    ```
-
+   ###START JENKINS CENTOS7
+   systemctl start jenkins
+   systemctl enable jenkins
+   
+   ###OPEN PORT 8080
+   firewall-cmd --permanent --add-port=8080/tcp
+   firewall-cmd --reload
+   
    ### Accessing Jenkins
    By default jenkins runs at port `8080`, You can access jenkins at
    ```sh
