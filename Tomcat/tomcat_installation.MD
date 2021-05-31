@@ -8,7 +8,7 @@
    ```sh 
    # Create tomcat directory
    cd /opt
-   wget http://mirrors.fibergrid.in/apache/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz
+   wget http://mirrors.fibergrid.in/apache/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz #if this link is not working, download latest version(download tomcat 8 and copy link of .tar.gz
    tar -xvzf /opt/apache-tomcat-8.5.35.tar.gz
    ```
 1. give executing permissions to startup.sh and shutdown.sh which are under bin. 
@@ -51,7 +51,7 @@ After that restart tomcat services to effect these changes
    tomcatup
    ```
 1. Update users information in the tomcat-users.xml file
-goto tomcat home directory and Add below users to conf/tomcat-user.xml file
+goto tomcat home directory and Add below users to fi
    ```sh
 	<role rolename="manager-gui"/>
 	<role rolename="manager-script"/>
